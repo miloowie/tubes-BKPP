@@ -18,16 +18,16 @@ func main() {
 				break
 			}
 
-			fmt.Println("Input tidak valid!")
+			fmt.Println("Input tidak valid!Mohon masukkan 'L' untuk laki-laki atau 'P' untuk perempuan.")
 		}
 
 		for {
 			fmt.Print("Apakah usia anda lebih dari atau sama dengan 18 tahun? (true/false): ")
 			fmt.Scan(&usia)
-			fmt.Print("Berapa umur anda: ")
+			fmt.Print("Berapa usia anda: ")
 			fmt.Scan(&umur)
 
-			if umur > 0 && umur >= 18 && usia {
+			if umur >= 18 && usia {
 				break
 			} else if umur > 0 && umur < 18 && !usia {
 				fmt.Println("Perhitungan BMI mungkin tidak akurat karena umur di bawah 18 tahun.")
@@ -78,17 +78,17 @@ func main() {
 
 		var ulang string
 		for {
-			fmt.Print("Hitung lagi? (y/n): ")
+			fmt.Print("Hitung lagi? (ya/tidak): ")
 			fmt.Scan(&ulang)
-			if ulang == "y" {
+			if ulang == "ya" {
 				main()
 				return
-			} else if ulang == "n" {
-				fmt.Println("Program selesai.")
+			} else if ulang == "tidak" {
+				fmt.Println("Program selesai. Terima kasih!")
 				return
 			}
 
-			fmt.Println("Input tidak valid! Masukkan hanya y atau n.")
+			fmt.Println("Input tidak valid! Masukkan hanya ya atau tidak.")
 		}
 
 	}
