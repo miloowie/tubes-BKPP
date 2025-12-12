@@ -16,9 +16,9 @@ func main() {
 
 			if gender == "L" || gender == "P" {
 				break
+			} else {
+				fmt.Println("Input tidak valid!Mohon masukkan 'L' untuk laki-laki atau 'P' untuk perempuan.")
 			}
-
-			fmt.Println("Input tidak valid!Mohon masukkan 'L' untuk laki-laki atau 'P' untuk perempuan.")
 		}
 
 		for {
@@ -58,9 +58,9 @@ func main() {
 
 			if bb > 0 && tb > 0 {
 				break
+			} else {
+				fmt.Println("Input tidak valid, mohon masukkan angka yang valid!")
 			}
-
-			fmt.Println("Input tidak valid, mohon masukkan angka yang valid!")
 		}
 
 		bmi := bb / ((tb / 100) * (tb / 100))
@@ -86,9 +86,9 @@ func main() {
 			} else if ulang == "tidak" {
 				fmt.Println("Program selesai. Terima kasih!")
 				return
+			} else {
+				fmt.Println("Input tidak valid! Masukkan hanya ya atau tidak.")
 			}
-
-			fmt.Println("Input tidak valid! Masukkan hanya ya atau tidak.")
 		}
 
 	}
